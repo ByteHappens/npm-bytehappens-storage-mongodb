@@ -3,7 +3,7 @@ import { IMongoDbUser } from "../interfaces/imongodbuser";
 
 export function ValidateMongoDbConnection(mongoDbConfiguration: IMongoDbConnection): void {
   if (mongoDbConfiguration.host === undefined || mongoDbConfiguration.port === undefined) {
-    throw new Error("Invalid MongoDb connection detected");
+    throw new Error("Invalid MongoDb Connection detected");
   }
 }
 
