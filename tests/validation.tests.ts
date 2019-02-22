@@ -1,16 +1,16 @@
 import "mocha";
 import { expect } from "chai";
 
-import { mongodb } from "../lib";
+import { storageMongoDb } from "../lib";
 
 describe("MongoDb Connection Validation", () => {
   it("Should succeed", done => {
-    let connection: mongodb.IMongoDbConnection = {
+    let connection: storageMongoDb.core.IMongoDbConnection = {
       host: "host",
       port: 1234
     };
 
-    mongodb.ValidateMongoDbConnection(connection);
+    storageMongoDb.core.ValidateMongoDbConnection(connection);
 
     done();
   });
@@ -18,9 +18,9 @@ describe("MongoDb Connection Validation", () => {
 
 describe("MongoDb User Validation", () => {
   it("Should succeed", done => {
-    let user: mongodb.IMongoDbUser = { username: "user", password: "password", databaseName: "database" };
+    let user: storageMongoDb.core.IMongoDbUser = { username: "user", password: "password", databaseName: "database" };
 
-    mongodb.ValidateMongoDbUser(user);
+    storageMongoDb.core.ValidateMongoDbUser(user);
 
     done();
   });
