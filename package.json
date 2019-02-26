@@ -23,7 +23,7 @@
     "test": "mocha tests/*.tests.ts -r ts-node/register --reporter spec --exit"
   },
   "dependencies": {
-    "bytehappens": "0.0.6",
+    "bytehappens": "0.0.7",
     "mongodb": "^3.1.13"
   },
   "devDependencies": {
