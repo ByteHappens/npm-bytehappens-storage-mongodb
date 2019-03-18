@@ -1,6 +1,6 @@
 {
   "name": "bytehappens-storage-mongodb",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "ByteHappens Storage for MongoDb Package for Node.js",
   "author": "Ewan \"ScottChak\" BURNS",
   "keywords": [
